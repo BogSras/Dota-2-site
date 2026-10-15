@@ -1,0 +1,41 @@
+.hero {color: bisque; 
+    height: 10px; 
+    width: 30px;}
+    img.sila{
+width: 85px; 
+    height: 85px;}
+img.agila{width: 85px;
+height: 85px;}
+img.inta{width: 85px;
+height: 85px;}
+.heros {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .heros table {
+    border-collapse: collapse;
+    width: 200px;          
+    flex-shrink: 0;
+  }
+  .iconname {
+    display: flex;
+    gap: 100px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+  .iconname {
+margin: 0;
+padding: 8px;
+  }
+  .iconname img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    flex-shrink: 0;
+  }
+.iconname p{
+    margin: 0;
+}
