@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styleforheropage.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero page</title>
+
+
+
+</head>
+<body>
+    <header>
+        <div class="headerdiv">
+            <a href="">
+              <img src="icons/Subtract.png">
+            </a>
+
+            <a class="button" href="">
+                
+                    Герои
+                
+            </a>
+           
+            <a class="button" href="" style="margin-left: 20px;"> 
+                
+                    Предметы
+               
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="h1lol">Описание</h1>
+        <div class="iconsdiv">
+        <a class="TalentTree" href=""> <img src="icons/TalentTree.png"  ></a>
+        <a class="InnateAbility" href=""> <img src="icons/InnateAbilityIcon.png"  ></a>
+        <a id="firstabilitybutton" class="FirstAbility" href=""> <img id="firstabilityicon" src=""  ></a>        
+        <a id="secondabilitybutton" class="SecondAbility" href=""> <img id="secondabilityicon" src=""  ></a>
+        <a class="ThirdAbility" href=""> <img src="https://avatars.mds.yandex.net/i?id=88281d0b6cc8d7a8e3f5201fc1b30c9a04a90787-2362775-images-thumbs&n=13"  ></a>
+        <a class="UltimateAbility" href=""> <img src="https://avatars.mds.yandex.net/i?id=88281d0b6cc8d7a8e3f5201fc1b30c9a04a90787-2362775-images-thumbs&n=13"  ></a>
+        <a class="Aghanim" href=""> <img src="icons/aghanim_shardandscepter-Photoroom.png"  ></a>
+
+        </div>
+        <div>
+                <video id="video" autoplay="" preload="auto" loop="" playsinline="" width="300px" ><source type="video/webm" src=""></video>
+                <img style="margin-left: 900px; margin-bottom: 100px;" src="https://avatars.mds.yandex.net/i?id=88281d0b6cc8d7a8e3f5201fc1b30c9a04a90787-2362775-images-thumbs&n=13" width="300px">
+        </div>
+            
+             
+    </main>
+
+    <footer>
+        <p class="footertext">
+            Все права защищены
+        </p>
+    </footer>
+
+</body>
+</html>
+
+
+
+
+<script>
+const urlParams = new URLSearchParams(window.location.search);
+const currentId = urlParams.get('id');
+const firsticon = document.getElementById("firstabilityicon")
+const video = document.getElementById("video")
+const secondicon = document.getElementById("secondabilityicon")
+    const database = {
+        "alchemist" : {
+            firsticonsrc: "icons/alchemist_acid_spray.png",
+            secondiconsrc: "icons/alchemist_unstable_concoction.png",
+            thiriconsrc: "",
+            ultimateiconsrc: "",
+            firstabilityvideo: "https://cdn.steamstatic.com/apps/dota2/videos/dota_react/abilities/alchemist/alchemist_acid_spray.webm",
+            secondabilityvideo: "",
+            thirdabilityvideo: "",
+            ultimateabilityvideo: ""
+        
+        },
+        "axe" : {
+            firsticonsrc: "icons/axe_berserkers_call.png"
+        }
+  
+  
+    }
+if (database[currentId]) {
+    firsticon.src = database[currentId].firsticonsrc
+    secondicon.src = database[currentId].secondiconsrc
+    
+   
+}
+
+function changeurl(ability) {
+    video.src = database[currentId][ability]
+    
+}
+
+document.getElementById("firstabilitybutton").addEventListener("click", function(event) {
+    event.preventDefault(); 
+    changeurl("firstabilityvideo");    
+    video.play()     
+})
+</script>

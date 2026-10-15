@@ -1,0 +1,115 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body {
+   display: flex;
+   flex-direction: column;
+}
+
+header {
+    
+    background-color: black;
+}
+.headerh1 {
+    color: white;
+    margin-bottom: 35px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.headerdiv {
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    display: flex;
+}
+
+.button {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: rgb(26, 26, 26);
+    color: white;
+    border-radius: 6px;
+    border: none;
+    padding: 7px 15px;
+    margin-bottom: 30px
+    
+
+}
+main {
+    flex-grow: 1;
+     background: 
+
+    url("icons/black-scales.png") repeat,
+    
+    linear-gradient(135deg, #1f0b0b 0%, #0d0d0d 50%, #020202 100%);
+    
+ 
+  background-attachment: fixed; 
+   
+
+}
+footer {
+    background-color: black;
+}
+.footertext {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    margin-left: 2%;
+}
+.Biography {
+    margin-top: 50px;
+}
+.StartWordOfBiography {
+    margin-left: 100px;
+}
+
+.h1lol {
+    margin-left: 40px;
+    color: white;
+}
+#video {
+    margin-top: 20px;
+    margin-left: 130px;
+    width: 500px;
+}
+
+.TalentTree img {
+    margin-left: 20px;
+    width: 100px;
+}
+.InnateAbility img {
+    margin-left: 20px;
+    width: 70px;
+}
+.FirstAbility img {
+    margin-left: 20px;
+    width: 100px;
+}
+.SecondAbility img {
+    margin-left: 20px;
+    width: 100px;
+}
+.ThirdAbility img {
+    margin-left: 20px;
+    width: 100px;
+}
+.UltimateAbility img {
+    margin-left: 20px;
+    width: 100px;
+}
+.Aghanim img {
+    margin-left: 20px;
+    width: 80px;
+    
+}
+.iconsdiv {
+    display: flex;
+    align-items: center;
+}

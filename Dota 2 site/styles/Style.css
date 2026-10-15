@@ -39,3 +39,12 @@ padding: 8px;
 .iconname p{
     margin: 0;
 }
+img.universali{
+  height: 85px;
+  width: 85px;
+}
+.agilaIcon{
+    width: 120px;
+    height: 30px;
+    right: 400px;
+}
