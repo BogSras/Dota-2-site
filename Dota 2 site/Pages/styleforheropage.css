@@ -42,7 +42,7 @@ header {
 
 }
 main {
-    flex-grow: 1;
+    flex-grow: 1;   
      background: 
 
     url("icons/black-scales.png") repeat,
@@ -78,6 +78,9 @@ footer {
     margin-top: 20px;
     margin-left: 130px;
     width: 500px;
+    
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
 }
 
 .TalentTree img {
@@ -112,4 +115,39 @@ footer {
 .iconsdiv {
     display: flex;
     align-items: center;
+}
+#heroicon {
+    margin-left: 800px; 
+    margin-bottom: 0px;
+    width: 300px;
+    border-radius: 15px;
+}
+
+td {
+    border: 0px solid black;
+    height: 0px;
+    width: 300px;
+}
+.videoclass {
+    display: flex;
+    align-items: flex-start;
+    gap: 960px;
+}
+.herotable {
+    border-collapse: collapse;
+    
+}
+.tablediv {
+    width: 300px;
+    background-color: gray;
+    height: auto;
+   
+}
+table tr td p {
+    text-align: center;
+    margin: 0;
+}
+table tr td p img {
+    width: 40px;
+    
 }

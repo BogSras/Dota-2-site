@@ -37,14 +37,65 @@
         <a class="InnateAbility" href=""> <img src="icons/InnateAbilityIcon.png"  ></a>
         <a id="firstabilitybutton" class="FirstAbility" href=""> <img id="firstabilityicon" src=""  ></a>        
         <a id="secondabilitybutton" class="SecondAbility" href=""> <img id="secondabilityicon" src=""  ></a>
-        <a class="ThirdAbility" href=""> <img src="https://avatars.mds.yandex.net/i?id=88281d0b6cc8d7a8e3f5201fc1b30c9a04a90787-2362775-images-thumbs&n=13"  ></a>
-        <a class="UltimateAbility" href=""> <img src="https://avatars.mds.yandex.net/i?id=88281d0b6cc8d7a8e3f5201fc1b30c9a04a90787-2362775-images-thumbs&n=13"  ></a>
+        <a id="thirdabilitybutton" class="ThirdAbility" href=""> <img id="thirdabilityicon" src=""></a>
+        <a id="ultimateabilitybutton" class="UltimateAbility" href=""> <img id="fourthabilityicon" src=""></a>
         <a class="Aghanim" href=""> <img src="icons/aghanim_shardandscepter-Photoroom.png"  ></a>
-
+            <img id="heroicon" src="">
         </div>
-        <div>
+        <div class="videoclass">
                 <video id="video" autoplay="" preload="auto" loop="" playsinline="" width="300px" ><source type="video/webm" src=""></video>
-                <img style="margin-left: 900px; margin-bottom: 100px;" src="https://avatars.mds.yandex.net/i?id=88281d0b6cc8d7a8e3f5201fc1b30c9a04a90787-2362775-images-thumbs&n=13" width="300px">
+                <div class="tablediv">
+                    <table class="herotable">
+                        <tr>
+                            <td colspan="2"> <p >АТАКА</p></td>
+                            
+                        </tr>
+                        <tr>
+                            <td><p><img src="icons/icon_damage.png"></p></td>
+                            <td><p>50-56</p></td>
+                        </tr>
+                        <tr>
+                            <td><p><img src="icons/icon_attack_time.png"></p></td>
+                            <td><p></p></td>
+                        </tr>
+                        <tr>
+                            <td><p><img src="icons/icon_attack_range.png"></p></td>
+                            <td><p></p></td>
+                        </tr>
+                        <tr>
+                            <td><p><img src="icons/icon_projectile_speed.png" alt=""></p></td>
+                            <td><p></p></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><p>ЗАЩИТА</p></td>
+                            
+                        </tr>
+                        <tr>
+                            <td><p><img src="icons/icon_armor.png" alt=""></p></td>
+                            <td><p></p></td>
+                        </tr>
+                        <tr>
+                            <td><p><img src="icons/icon_magic_resist.png" alt=""></p></td>
+                            <td><p></p></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><p>МОБИЛЬНОСТЬ</p></td>
+                           
+                        </tr>
+                        <tr>
+                            <td><p><img src="icons/icon_movement_speed.png" alt=""></p></td>
+                            <td><p></p></td>
+                        </tr>
+                        <tr>
+                            <td><p><img src="icons/icon_turn_rate.png" alt=""></p></td>
+                            <td><p></p></td>
+                        </tr>
+                        <tr>
+                            <td><p><img src="icons/icon_vision.png" alt=""></p></td>
+                            <td><p></p></td>
+                        </tr>
+                    </table>
+                </div>
         </div>
             
              
@@ -68,16 +119,22 @@ const currentId = urlParams.get('id');
 const firsticon = document.getElementById("firstabilityicon")
 const video = document.getElementById("video")
 const secondicon = document.getElementById("secondabilityicon")
+const thirdicon = document.getElementById("thirdabilityicon")
+const ultimateicon = document.getElementById("fourthabilityicon")
+const heroicon = document.getElementById("heroicon")
     const database = {
         "alchemist" : {
+            heroicon: "icons/alchemist.png",
+
             firsticonsrc: "icons/alchemist_acid_spray.png",
             secondiconsrc: "icons/alchemist_unstable_concoction.png",
-            thiriconsrc: "",
-            ultimateiconsrc: "",
+            thirdconsrc: "icons/alchemist_corrosive_weaponry.png",
+            ultimateiconsrc: "icons/alchemist_chemical_rage.png",
+
             firstabilityvideo: "https://cdn.steamstatic.com/apps/dota2/videos/dota_react/abilities/alchemist/alchemist_acid_spray.webm",
-            secondabilityvideo: "",
-            thirdabilityvideo: "",
-            ultimateabilityvideo: ""
+            secondabilityvideo: "https://cdn.steamstatic.com/apps/dota2/videos/dota_react/abilities/alchemist/alchemist_unstable_concoction.webm",
+            thirdabilityvideo: "https://cdn.steamstatic.com/apps/dota2/videos/dota_react/abilities/alchemist/alchemist_corrosive_weaponry.webm",
+            ultimateabilityvideo: "https://cdn.steamstatic.com/apps/dota2/videos/dota_react/abilities/alchemist/alchemist_chemical_rage.webm"
         
         },
         "axe" : {
@@ -89,8 +146,10 @@ const secondicon = document.getElementById("secondabilityicon")
 if (database[currentId]) {
     firsticon.src = database[currentId].firsticonsrc
     secondicon.src = database[currentId].secondiconsrc
-    
-   
+    thirdicon.src = database[currentId].thirdconsrc
+    ultimateicon.src = database[currentId].ultimateiconsrc
+    video.src = database[currentId].firstabilityvideo
+    heroicon.src = database[currentId].heroicon
 }
 
 function changeurl(ability) {
@@ -101,6 +160,21 @@ function changeurl(ability) {
 document.getElementById("firstabilitybutton").addEventListener("click", function(event) {
     event.preventDefault(); 
     changeurl("firstabilityvideo");    
+    video.play()     
+})
+document.getElementById("secondabilitybutton").addEventListener("click", function(event) {
+    event.preventDefault(); 
+    changeurl("secondabilityvideo");    
+    video.play()     
+})
+document.getElementById("thirdabilitybutton").addEventListener("click", function(event) {
+    event.preventDefault(); 
+    changeurl("thirdabilityvideo");    
+    video.play()     
+})
+document.getElementById("ultimateabilitybutton").addEventListener("click", function(event) {
+    event.preventDefault(); 
+    changeurl("ultimateabilityvideo");    
     video.play()     
 })
 </script>
