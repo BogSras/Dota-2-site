@@ -1,0 +1,82 @@
+ html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body {
+   display: flex;
+   flex-direction: column;
+}
+
+
+.headerh1 {
+    color: white;
+    margin-bottom: 35px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.headerdiv {
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    display: flex;}
+ .iconname {
+    display: flex;
+    gap: 100px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+  .iconname {
+margin: 0;
+padding: 8px;
+  }
+  .iconname img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    flex-shrink: 0;
+  }
+.iconname p{
+    margin: 0;
+}
+.agilaIcon{
+    width: 120px;
+    height: 30px;
+    right: 400px;
+}
+.charter img{
+width: 100x;
+height: 56px;
+}
+.charter{
+  display: flex;
+  flex-direction: row;
+gap: 10px;
+align-items: flex-start;
+}
+.charter table{
+  border-collapse: collapse;
+  width: 100px;
+  margin: 0;
+}
+ .textCharterStrength {
+  height: 30px;
+
+}
+
+.textAgila {
+  position: absolute !important;
+left: 508px;
+top: 197px;
+}
+.textIntelligence {
+  position: absolute !important;
+  left: 1020px;
+  top: 197px;
+}
+.textUniversal {
+  position: absolute !important;
+  left: 1540px;
+  top: 197px;
+}
