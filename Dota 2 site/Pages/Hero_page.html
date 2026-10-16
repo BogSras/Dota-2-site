@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styleforheropage.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero page</title>
+
+
+
+</head>
+<body>
+    <header>
+        <div class="headerdiv">
+            <a href="C:\Users\Daniel\Desktop\Dota 2 site\index.html">
+              <img id="dotalogo" src="icons/Subtract.png">
+            </a>
+
+            <a class="button" href="C:\Users\Daniel\Desktop\Dota 2 site\index.html">
+                
+                    Герои
+                
+            </a>
+           
+            <a id="predmeti" class="button" href="" style="margin-left: 20px;"> 
+                
+                    Предметы
+               
+            </a>
+        </div>
+    </header>
+
+    <main>
+    <img id="firstabilityhovericon" class="firsthovericon" src="">
+    <img id="talenttreeabilityhovericon" class="talenthovericon" src="">
+    <img id="innateabilityhovericon" src="">
+    <img id="secondabilityhovericon" src="">
+    <img id="thirdabilityhovericon" src="">
+    <img id="ultimateabilityhovericon" src="">
+    <img id="aghanimhovericon" src="">
+        <h1 id="heroname" class="h1lol"></h1>
+        <div class="iconsdiv">
+        <a id="talenttree" class="TalentTree" href=""> <img src="icons/TalentTree.png"  ></a>
+        <a id="innateabilitybutton" class="InnateAbility" href=""> <img src="icons/InnateAbilityIcon.png"  ></a>
+        <a id="firstabilitybutton" class="FirstAbility" href=""> <img id="firstabilityicon" src=""  > </a>        
+        <a id="secondabilitybutton" class="SecondAbility" href=""> <img id="secondabilityicon" src=""  ></a>
+        <a id="thirdabilitybutton" class="ThirdAbility" href=""> <img id="thirdabilityicon" src=""></a>
+        <a id="ultimateabilitybutton" class="UltimateAbility" href=""> <img id="fourthabilityicon" src=""></a>
+        <a id="aghanimbutton" class="Aghanim" href=""> <img src="icons/Alchemistaghanim.png"  ></a>
+            <img id="heroicon" src="">
+        </div>
+        <div class="videoclass">
+                <video id="video" autoplay="" preload="auto" loop="" playsinline="" width="300px" ><source type="video/webm" src=""></video>
+                <div class="tablediv">
+                    <table class="herotable">
+                        <tr>
+                            <td colspan="2"> <p >АТАКА</p></td>
+                            
+                        </tr>
+                        <tr>
+                            <td><p><img src="icons/icon_damage.png"></p></td>
+                            <td><p id="attacktext"></p></td>
+                        </tr>
+                        <tr>
+                            <td><p><img src="icons/icon_attack_time.png"></p></td>
+                            <td><p id="attacktime"></p></td>
+                        </tr>
+                        <tr>
+                            <td><p><img src="icons/icon_attack_range.png"></p></td>
+                            <td><p id="attackrange"></p></td>
+                        </tr>
+                        <tr>
+                            <td><p><img src="icons/icon_projectile_speed.png" alt=""></p></td>
+                            <td><p id="projectilespeed"></p></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><p>ЗАЩИТА</p></td>
+                            
+                        </tr>
+                        <tr>
+                            <td><p><img src="icons/icon_armor.png" alt=""></p></td>
+                            <td><p id="armor"></p></td>
+                        </tr>
+                        <tr>
+                            <td><p><img src="icons/icon_magic_resist.png" alt=""></p></td>
+                            <td><p id="magicresist"></p></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><p>МОБИЛЬНОСТЬ</p></td>
+                           
+                        </tr>
+                        <tr>
+                            <td><p><img src="icons/icon_movement_speed.png" alt=""></p></td>
+                            <td><p id="movementspeed"></p></td>
+                        </tr>
+                        <tr>
+                            <td><p><img src="icons/icon_turn_rate.png" alt=""></p></td>
+                            <td><p id="turnrate"></p></td>
+                        </tr>
+                        <tr>
+                            <td><p><img src="icons/icon_vision.png" alt=""></p></td>
+                            <td><p id="vision"></p></td>
+                        </tr>
+                    </table>
+                </div>
+        </div>
+            
+             
+    </main>
+
+    <footer>
+        <p class="footertext">
+            Все права защищены
+        </p>
+    </footer>
+
+</body>
+</html>
+
+
+
+
+<script>
+const urlParams = new URLSearchParams(window.location.search);
+const currentId = urlParams.get('id');
+const firsticon = document.getElementById("firstabilityicon")
+const video = document.getElementById("video")
+const secondicon = document.getElementById("secondabilityicon")
+const thirdicon = document.getElementById("thirdabilityicon")
+const ultimateicon = document.getElementById("fourthabilityicon")
+const heroicon = document.getElementById("heroicon")
+const herodmgonfirstlvl = document.getElementById("attacktext")
+const heroattacktime = document.getElementById("attacktime")
+const heroattackrange = document.getElementById("attackrange")
+const heroprojectilespeed = document.getElementById("projectilespeed")
+const heroarmor = document.getElementById("armor")
+const heromagicresist = document.getElementById("magicresist")
+const heromovementspeed = document.getElementById("movementspeed")
+const heroturnrate = document.getElementById("turnrate")
+const herovision = document.getElementById("vision")
+const herofirstabilityhovericon = document.getElementById("firstabilityhovericon")
+const fistabilitybutton = document.getElementById("firstabilitybutton")
+const herotalenttreehovericon = document.getElementById("talenttreeabilityhovericon")
+const talenttree = document.getElementById("talenttree")
+const innateabilityhovericon = document.getElementById("innateabilityhovericon")
+const innateabilitybutton = document.getElementById("innateabilitybutton")
+const secondabilitybutton = document.getElementById("secondabilitybutton")
+const secondabilityhovericon = document.getElementById("secondabilityhovericon")
+const thirdabilityhovericon = document.getElementById("thirdabilityhovericon")
+const thirdabilitybutton = document.getElementById("thirdabilitybutton")
+const ultimateabilityhovericon = document.getElementById("ultimateabilityhovericon")
+const ultimateabilitybutton = document.getElementById("ultimateabilitybutton")
+const aghanimhovericon = document.getElementById("aghanimhovericon")
+const aghanimbutton = document.getElementById("aghanimbutton")
+const Heroname = document.getElementById("heroname")
+
+    const database = {
+        "alchemist" : {
+            heroicon: "icons/alchemist.png",
+            heroname: "Alchemist",
+
+            firsticonsrc: "icons/alchemist_acid_spray.png",
+            secondiconsrc: "icons/alchemist_unstable_concoction.png",
+            thirdconsrc: "icons/alchemist_corrosive_weaponry.png",
+            ultimateiconsrc: "icons/alchemist_chemical_rage.png",
+
+            talenttree: "icons/Alchemisttalenttree.png",
+            innateability: "icons/alchemistinnateability.png",
+            firstabilityhovericon: "icons/alchemistfirstabilityhovericon.png",
+            secondabilityhovericon: "icons/alchemistSecondabilityhovericon.png",
+            thirdabilityhovericon: "icons/alchemistthirdabilityhovericon.png",
+            ultimateabilityhovericon: "icons/alchemistultimateabilityhovericon.png",
+            aghanim: "icons/alchemistaghanim-Photoroom.png",
+
+
+            firstabilityvideo: "https://cdn.steamstatic.com/apps/dota2/videos/dota_react/abilities/alchemist/alchemist_acid_spray.webm",
+            secondabilityvideo: "https://cdn.steamstatic.com/apps/dota2/videos/dota_react/abilities/alchemist/alchemist_unstable_concoction.webm",
+            thirdabilityvideo: "https://cdn.steamstatic.com/apps/dota2/videos/dota_react/abilities/alchemist/alchemist_corrosive_weaponry.webm",
+            ultimateabilityvideo: "https://cdn.steamstatic.com/apps/dota2/videos/dota_react/abilities/alchemist/alchemist_chemical_rage.webm",
+        
+            dmg: "50-56",
+            attacktime : "1.7",
+            attackrange: "150",
+            projectilespeed: "900",
+            armor: "3.2",
+            magicresist: "25%",
+            movementspeed: "290",
+            turnrate: "0.6",
+            vision: "1800 / 800"
+            
+
+        },
+        "axe" : {
+            firsticonsrc: "icons/axe_berserkers_call.png"
+        }
+  
+  
+    }
+if (database[currentId]) {
+    
+    firsticon.src = database[currentId].firsticonsrc
+    secondicon.src = database[currentId].secondiconsrc
+    thirdicon.src = database[currentId].thirdconsrc
+    ultimateicon.src = database[currentId].ultimateiconsrc
+    video.src = database[currentId].firstabilityvideo
+    heroicon.src = database[currentId].heroicon
+    herodmgonfirstlvl.textContent = database[currentId].dmg
+    heroattackrange.textContent = database[currentId].attackrange
+    heroattacktime.textContent = database[currentId].attacktime
+    heroprojectilespeed.textContent = database[currentId].projectilespeed
+    heroarmor.textContent = database[currentId].armor
+    heromagicresist.textContent = database[currentId].magicresist
+    heroturnrate.textContent = database[currentId].turnrate
+    herovision.textContent = database[currentId].vision
+    herofirstabilityhovericon.src = database[currentId].firstabilityhovericon
+    herotalenttreehovericon.src = database[currentId].talenttree
+    innateabilityhovericon.src = database[currentId].innateability
+    secondabilityhovericon.src = database[currentId].secondabilityhovericon
+    thirdabilityhovericon.src = database[currentId].thirdabilityhovericon
+    ultimateabilityhovericon.src = database[currentId].ultimateabilityhovericon
+    aghanimhovericon.src = database[currentId].aghanim
+    Heroname.textContent = database[currentId].heroname
+}
+
+function changeurl(ability) {
+    video.src = database[currentId][ability]
+    
+}
+document.getElementById("firstabilitybutton").addEventListener("click", function(event) {
+    event.preventDefault(); 
+    changeurl("firstabilityvideo");    
+    video.play()     
+})
+document.getElementById("secondabilitybutton").addEventListener("click", function(event) {
+    event.preventDefault(); 
+    changeurl("secondabilityvideo");    
+    video.play()     
+})
+document.getElementById("thirdabilitybutton").addEventListener("click", function(event) {
+    event.preventDefault(); 
+    changeurl("thirdabilityvideo");    
+    video.play()     
+})
+document.getElementById("ultimateabilitybutton").addEventListener("click", function(event) {
+    event.preventDefault(); 
+    changeurl("ultimateabilityvideo");    
+    video.play()     
+})
+
+
+fistabilitybutton.addEventListener("mouseenter", () => {
+   
+    firstabilityhovericon.style.visibility = "visible";
+} )
+fistabilitybutton.addEventListener("mouseleave", () => {
+   
+    firstabilityhovericon.style.visibility = "hidden";
+} )
+talenttree.addEventListener("mouseenter", () => {
+   
+    herotalenttreehovericon.style.visibility = "visible";
+} )
+talenttree.addEventListener("mouseleave", () => {
+   
+    herotalenttreehovericon.style.visibility = "hidden";
+} )
+innateabilitybutton.addEventListener("mouseenter", () => {
+   
+    innateabilityhovericon.style.visibility = "visible";
+} )
+innateabilitybutton.addEventListener("mouseleave", () => {
+   
+    innateabilityhovericon.style.visibility = "hidden";
+} )
+secondabilitybutton.addEventListener("mouseenter", () => {
+   
+    secondabilityhovericon.style.visibility = "visible";
+} )
+secondabilitybutton.addEventListener("mouseleave", () => {
+   
+    secondabilityhovericon.style.visibility = "hidden";
+} )
+thirdabilitybutton.addEventListener("mouseenter", () => {
+   
+    thirdabilityhovericon.style.visibility = "visible";
+} )
+thirdabilitybutton.addEventListener("mouseleave", () => {
+   
+    thirdabilityhovericon.style.visibility = "hidden";
+} )
+ultimateabilitybutton.addEventListener("mouseenter", () => {
+   
+    ultimateabilityhovericon.style.visibility = "visible";
+} )
+ultimateabilitybutton.addEventListener("mouseleave", () => {
+   
+    ultimateabilityhovericon.style.visibility = "hidden";
+} )
+aghanimbutton.addEventListener("mouseenter", () => {
+   
+    aghanimhovericon.style.visibility = "visible";
+} )
+aghanimbutton.addEventListener("mouseleave", () => {
+   
+    aghanimhovericon.style.visibility = "hidden";
+} )
+
+</script>
