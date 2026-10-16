@@ -19,6 +19,9 @@ header {
     font-family: Arial, Helvetica, sans-serif;
     
 }
+#dotalogo {
+    margin-top: 4px;
+}
 .headerdiv {
     width: 200px;
     height: 200px;
@@ -201,4 +204,7 @@ table tr td p img {
 }
 #heroname {
     margin-left: 80px;
+}
+#predmeti {
+    visibility: hidden;
 }
