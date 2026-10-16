@@ -109,7 +109,7 @@ footer {
 }
 .Aghanim img {
     margin-left: 20px;
-    width: 80px;
+   width: 55px;
     
 }
 .iconsdiv {
@@ -117,7 +117,7 @@ footer {
     align-items: center;
 }
 #heroicon {
-    margin-left: 800px; 
+    margin-left: 820px; 
     margin-bottom: 0px;
     width: 300px;
     border-radius: 15px;
@@ -150,4 +150,55 @@ table tr td p {
 table tr td p img {
     width: 40px;
     
+}
+.firsthovericon {
+    position: absolute !important;
+    
+    top: 230px;
+    left: 340px;
+    margin-bottom: 0px !important;
+    margin-right: 0px  !important;
+    visibility: hidden;
+}
+#talenttreeabilityhovericon {
+    pointer-events: none;
+    position: absolute !important;
+    top: 220px !important;
+    left: 120px !important;
+    visibility: hidden;
+}
+#innateabilityhovericon {
+    position: absolute !important;
+    top: 230px !important;
+    left: 210px !important;
+    visibility: hidden;
+    
+
+}
+#secondabilityhovericon {
+    position: absolute !important;
+    top: 230px;
+    left: 460px;
+    visibility: hidden;
+}
+#thirdabilityhovericon {
+    position: absolute !important;
+    left: 580px;
+    top: 230px;
+    visibility: hidden;
+}
+#ultimateabilityhovericon {
+    position: absolute !important;
+    left: 700px;
+    top: 230px;
+    visibility: hidden;
+}
+#aghanimhovericon {
+    position: absolute !important;
+    left: 780px;
+    top: 230px;
+    visibility: hidden;
+}
+#heroname {
+    margin-left: 80px;
 }
