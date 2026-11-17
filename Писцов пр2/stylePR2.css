@@ -1,5 +1,13 @@
-div{
-    border: 1px solid;
+@font-face {
+    font-family: "fortnitebattlefest";
+    src: url(fortnitebattlefest.ttf);
+}
+.headerknopkidiv {
+    display: flex;
+justify-content: center;
+align-items: center;
+gap: 50px;
+left: 50px;
 }
 .header1 {
     width: 100%;
@@ -30,37 +38,70 @@ div{
     align-items: center;
 }
 .buttonHeader1{
+      display: flex;
+    align-items: center;
     width: auto;
     height: 20px;
-    margin-left: 40px;
-    background-color: rgb(43, 139, 248);
-    border: 1px solid;
+    text-decoration: none;
+     font-size: 25px;
+  border: none;
+  color:white;
+    }
+.buttonHeader1:hover {
+    color: rgb(0, 38, 255);
 }
 .buttonHeader2{
+    display: flex;
+    align-items: center;
     width: auto;
     height: 20px;
-    margin-left: 40px;
-    background-color: rgb(14, 214, 250);
-    border: 1px solid;
+    text-decoration: none;
+    font-size: 25px;
+    color:white;
+}
+.buttonHeader2:hover {
+    color: rgb(0, 38, 255);
 }
 .buttonHeader3{
+      display: flex;
+    align-items: center;
     width: auto;
     height: 20px;
-    margin-left: 40px;
-    background-color: aqua;
-    border: 1px solid;
+    text-decoration: none;
+     font-size: 25px;
+     border: none;
+     color:white;
+}
+.buttonHeader3:hover {
+    color: rgb(0, 38, 255);
 }
 .main {
-    margin-top: 2.6%;
+    margin-top: 60px;
     width: 100%;
     height: 970px;
    
+}
+.historylogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 58px;
+    font-family: "fortnitebattlefest";
+    color: #00c3ff;
+}
+.fort {
+     margin-left: 400px;
+      font-size: 58px;
+    font-family: "fortnitebattlefest";
+    color: #00c3ff;
 }
 .mainback {
 width: 100%;
 height: 100%;
 }
 .logotext {
+      font-family: "fortnitebattlefest";
+      font-size: 60px;
     text-decoration: none;
     display: flex;
 align-items: center;
@@ -69,23 +110,101 @@ color: rgb(4, 224, 224);
 }
 body {
 margin: 0;
- background-image: url(ab94i3q4agk21.jpg)
+ background-image: url(ab94i3q4agk21.jpg);
+
+}
+.history {
+width: 50%;
+height: 100%;
+}
+.inforest {
+    width: 100%;
+    height:300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.imgeaddiv {
+    margin-top: 67px;
+    width: 50%;
+    height: 100%;
+}
+.imgead {
+    width: 60%;
+    height:100%;
 }
 .infoforead {
+    margin-top: 100px;
 margin-left: 600px;
     width: 800px;
 }
 .textead {
+    margin-left: 400px;
 display: flex;
 justify-content: center;
-    color:#FFDB58;
-    font-size: 30px;
+width: 500px;
+height: 250 px;
+    color:#fffefe;
+    font-size:  25px;
+     font-family: "fortnitebattlefest";
+}
+.actioninfo {
+    margin-top: 150px;
+    font-size: 40px;
+     font-family: "fortnitebattlefest";
+     color: #01ace0;
+     display: flex;
+    justify-content: center
 }
 .Action {
-    width: 800px;
+    width: 1000px;
 height: 400px;
+display: flex;
+flex-direction: row;
+background-color: #01ace0;
+border: 1px #026280;
 }
 .imgaction {
-width: 400px;
-height: 400px;
+width: 100%;
+height: 100%;
+}
+
+.Actionimgdiv {
+    width: 50%;
+    height: 100%;
+}
+.textactiondiv {
+width: 50%;
+height: 100%;
+}
+.jeton {
+    width: 100%;
+    height: 60%;
+}
+.textactionmain {
+    font-family: "fortnitebattlefest";
+    font-size: 25px;
+    color: white;
+}
+.textaction {
+    font-size: 20px;
+     font-family: "fortnitebattlefest";
+     color:cornsilk
+}
+.actiontextbody {
+    width: 50%;
+}
+.textactionbodydiv {
+height: 30%;
+display: flex;
+flex-direction: row;
+}
+.actiondata {
+    width: 50%;
+}
+.actiondatatext {
+    font-size: 20px;
+     font-family: "fortnitebattlefest";
+     color:cornsilk
 }

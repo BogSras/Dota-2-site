@@ -1,26 +1,116 @@
-section {
-     border: 1px black;
+@font-face {
+    font-family: "fortnitebattlefest";
+    src: url(fortnitebattlefest.ttf);
 }
-.div1vnutri {
-    width: 300px;
-    height: 70%;
-  background-color: rgba(0, 0, 255, 0.377);
-  border-radius: 50px;
+body {
+    margin: 0;
+    background-image: url(1641204074_2-abrakadabra-fun-p-sinii-fon-dlya-prevyu-2.jpg);
+height: 2000px;
 }
-.foto1 {
+.header1 {
     width: 100%;
-    height: 100%;
-    border-radius: 50px;
-}
-.div1vnutri2{
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    border: 1px solid;
-}
-.div2vnutri {
-    width: 500px;
-    height: 70%;
+    height: 80px;
+    background-color: rgb(0, 140, 255);
     display: flex;
     flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+}
+.imgdiv1 {
+    width: 80px;
+    height: 80px;
+   display: flex;
+   align-items: center;
+}
+.logotext {
+      font-family: "fortnitebattlefest";
+      font-size: 60px;
+    text-decoration: none;
+    display: flex;
+align-items: center;
+justify-content: center;
+color: rgb(4, 224, 224);
+}
+.logo {
+    width: 80px;
+    height: 79px;
+}
+.headerknopkidiv {
+    display: flex;
+justify-content: center;
+align-items: center;
+gap: 50px;
+left: 50px;
+}
+.buttonHeader1{
+      display: flex;
+    align-items: center;
+    width: auto;
+    height: 20px;
+    text-decoration: none;
+     font-size: 25px;
+  border: none;
+  color:white;
+    }
+.buttonHeader1:hover {
+    color: rgb(0, 38, 255);
+}
+.buttonHeader2{
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color:white;
+}
+.buttonHeader2:hover {
+    color: rgb(0, 38, 255);
+}
+.buttonHeader3{
+      display: flex;
+    align-items: center;
+    width: auto;
+    height: 20px;
+    text-decoration: none;
+     font-size: 25px;
+     border: none;
+     color:white;
+}
+.buttonHeader3:hover {
+    color: rgb(0, 38, 255);
+}
+.section1 {
+    width: 70%;
+    margin: 80px auto 0 auto;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around
+}
+.kartochka {
+    height: 400px;
+width: 250px;
+border: 1px solid;
+}
+.vnutriimg {
+    width: 100%;
+    height: 40%;
+    border: 1px solid;
+}
+.karimg{
+    width: 100%;
+    height: 100%;
+}
+.vnutriopis {
+    width: 100%;
+    height: 60%;
+    background-color: rgb(70, 142, 206);
+    display: flex;
+    justify-content: space-evenly;
 }
